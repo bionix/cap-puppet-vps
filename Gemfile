@@ -1,6 +1,7 @@
-# A sample Gemfile
 source "https://rubygems.org"
-
+gem 'capistrano-ext-rvm'
+gem 'capistrano-ext-rvm-bundler'
+gem 'rvm-capistrano'
 gem 'facter'
 gem 'puppet'
 gem 'hiera'
