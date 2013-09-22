@@ -1,4 +1,5 @@
 require "rvm/capistrano"
+require 'capistrano/ext/multistage'
 
 namespace :bootstrap do
   task :default do
@@ -19,9 +20,9 @@ namespace :bootstrap do
 
     # Bootstrap RVM/Puppet!
     try_sudo("bash /etc/puppet/bootstrap.sh")
-  end 
+  end
 end
-    
+
 namespace :puppet do
   task :default do
     # Specific RVM string for managing Puppet; may or may not match the RVM string for the application
@@ -40,5 +41,5 @@ namespace :puppet do
 
     # Run RVM/Puppet!
     run("rvmsudo -p '#{sudo_prompt}' puppet apply /etc/puppet/manifests/site.pp")
-  end 
-end           
+  end
+end
