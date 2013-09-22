@@ -16,12 +16,16 @@ GEM
     capistrano-ext-rvm-bundler (0.0.2)
       capistrano (>= 1.0.0)
       capistrano-ext-rvm (>= 0.0.1)
+    capistrano-puppet (0.0.2)
+      capistrano
+      rest-client
     diff-lcs (1.2.4)
     facter (1.7.3)
     hiera (1.2.1)
       json_pure
     i18n (0.6.5)
     json_pure (1.8.0)
+    mime-types (1.25)
     mini_portile (0.5.1)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
@@ -34,6 +38,8 @@ GEM
       rgen (~> 0.6.5)
     rack (1.5.2)
     rake (10.1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rgen (0.6.6)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
@@ -62,6 +68,7 @@ DEPENDENCIES
   capistrano!
   capistrano-ext-rvm
   capistrano-ext-rvm-bundler
+  capistrano-puppet
   facter
   hiera
   nokogiri

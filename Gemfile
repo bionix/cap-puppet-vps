@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem 'capistrano-puppet'
 gem 'capistrano-ext-rvm'
 gem 'capistrano-ext-rvm-bundler'
 gem 'rvm-capistrano'
